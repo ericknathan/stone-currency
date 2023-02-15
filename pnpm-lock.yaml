@@ -17,6 +17,7 @@ specifiers:
   typescript: ^4.9.3
   vite: ^4.1.0
   vite-tsconfig-paths: ^4.0.5
+  zod: ^3.20.6
 
 dependencies:
   '@hookform/resolvers': 2.9.11_react-hook-form@7.43.1
@@ -28,6 +29,7 @@ dependencies:
   react-hook-form: 7.43.1_react@18.2.0
   react-router-dom: 6.8.1_biqbaboplfbrettd7655fr4n2y
   styled-components: 5.3.6_biqbaboplfbrettd7655fr4n2y
+  zod: 3.20.6
 
 devDependencies:
   '@types/react': 18.0.28
@@ -1357,3 +1359,7 @@ packages:
   /yallist/3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
     dev: true
+
+  /zod/3.20.6:
+    resolution: {integrity: sha512-oyu0m54SGCtzh6EClBVqDDlAYRz4jrVtKwQ7ZnsEmMI9HnzuZFj8QFwAY1M5uniIYACdGvv0PBWPF2kO0aNofA==}
+    dev: false
