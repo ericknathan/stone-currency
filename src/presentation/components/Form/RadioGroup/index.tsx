@@ -17,7 +17,7 @@ export function RadioGroup({ name, label, options, orientation = 'horizontal', .
   return (
     <RadioGroupWrapper>
       <FormLabel htmlFor={name}>{label}</FormLabel>
-      <RadioGroupInputsWrapper aria-label={label} orientation={orientation}>
+      <RadioGroupInputsWrapper defaultValue={options[0].value} aria-label={label} orientation={orientation}>
         {options.map(option => (
           <RadioGroupInput>
             <RadioGroupInputItem {...props} value={option.value} id={option.value}>
