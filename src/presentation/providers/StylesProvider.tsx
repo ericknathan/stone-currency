@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import { defaultTheme } from './theme/default';
-import { GlobalStyle } from './global';
+import { defaultTheme } from '@presentation/styles/theme/default';
+import { GlobalStyle } from '@presentation/styles/global';
 
 interface StylesProviderProps {
   children: ReactNode;

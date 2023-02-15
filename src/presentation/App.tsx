@@ -1,5 +1,4 @@
-import { StylesProvider } from './styles/provider';
-import { CacheProvider, RouterProvider } from '@presentation/providers';
+import { CacheProvider, RouterProvider, StylesProvider } from '@presentation/providers';
 
 export function App() {
   return (
