@@ -1,5 +1,5 @@
 import { StylesProvider } from './styles/provider';
-import { RouterProvider } from '@main/router/react-router-dom';
+import { RouterProvider } from '@presentation/providers';
 
 export function App() {
   return (
