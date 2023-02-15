@@ -6,7 +6,7 @@ export const defaultTheme = {
     'accent-500': '#45505E',
     'accent-300': '#6E7E90',
     'accent-200': '#8C9CAD ',
-    'accent-50': '#BAC6D3 ',
+    'accent-50': '#D7E0EB ',
   
     'primary-500': '#00AB63',
     'primary-700': '#008B57',
@@ -15,6 +15,7 @@ export const defaultTheme = {
     md: '730px'
   },
   fontFamilies: {
-    default: '"Roboto", sans-serif'
+    default: '"Roboto", sans-serif',
+    circularStd: '"Circular Std", sans-serif'
   }
 }
