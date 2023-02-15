@@ -9,7 +9,7 @@ export interface HttpResponse<ResponseType = any> {
 export function formatHttpResponse<ResponseType = any>(response: AxiosResponse): HttpResponse<ResponseType> {
   return {
     status: response.status,
-    data: response.data,
+    data: response.data.code ?? response.data,
     error: response.data.message,
   };
 }
