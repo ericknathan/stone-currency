@@ -1,0 +1,3 @@
+export const APP_CONSTRAINTS = {
+  DEFAULT_CURRENCY: 'USD-BRL'
+}
