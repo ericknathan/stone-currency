@@ -6,6 +6,7 @@ export const defaultTheme = {
     'accent-500': '#45505E',
     'accent-300': '#6E7E90',
     'accent-200': '#8C9CAD ',
+    'accent-50': '#BAC6D3 ',
   
     'primary-500': '#00AB63',
     'primary-700': '#008B57',
