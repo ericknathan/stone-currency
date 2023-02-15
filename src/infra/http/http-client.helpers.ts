@@ -2,14 +2,16 @@ import { AxiosResponse } from 'axios';
 
 export interface HttpResponse<ResponseType = any> {
   status: number;
-  data: ResponseType;
+  response: ResponseType;
   error?: string;
+  requestTimestamp: number;
 }
 
 export function formatHttpResponse<ResponseType = any>(response: AxiosResponse): HttpResponse<ResponseType> {
   return {
     status: response.status,
-    data: response.data.code ?? response.data,
+    response: response.data.code ?? response.data,
     error: response.data.message,
+    requestTimestamp: new Date().getTime()
   };
 }
