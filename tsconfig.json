@@ -17,6 +17,7 @@
     "jsx": "react-jsx",
     "baseUrl": "src",
     "paths": {
+      "@domain/*": ["domain/*"],
       "@infra/*": ["infra/*"],
       "@main/*": ["main/*"],
       "@presentation/*": ["presentation/*"],
