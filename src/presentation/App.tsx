@@ -1,9 +1,10 @@
-import { StylesProvider } from "./styles/provider"
+import { StylesProvider } from './styles/provider';
+import { RouterProvider } from '@main/router/react-router-dom';
 
 export function App() {
   return (
     <StylesProvider>
-      <h1>Hello world!</h1>
+      <RouterProvider />
     </StylesProvider>
   );
 }
