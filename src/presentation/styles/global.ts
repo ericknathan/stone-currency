@@ -9,17 +9,21 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   *:focus {
-    outline: 2px solid ${({ theme }) => theme['primary-500']};
+    outline: 2px solid ${({ theme }) => theme.colors['primary-500']};
     outline-offset: 2px;
   }
 
   body {
-    background-color: ${({ theme }) => theme.white};
-    color: ${({ theme }) => theme['accent-700']};
+    background-color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors['accent-700']};
+  }
+
+  body, #root {
+    height: 100vh;
   }
 
   body, input, textarea, button {
-    font-family: 'Roboto', sans-serif;
+    font-family: ${({ theme }) => theme.fontFamilies.default};
     font-weight: 400;
     font-size: 1rem;
 
