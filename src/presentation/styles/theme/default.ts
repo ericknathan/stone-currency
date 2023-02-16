@@ -10,6 +10,8 @@ export const defaultTheme = {
   
     'primary-500': '#00AB63',
     'primary-700': '#008B57',
+
+    'red-500': '#D32F2F',
   },
   breakpoints: {
     md: '730px'

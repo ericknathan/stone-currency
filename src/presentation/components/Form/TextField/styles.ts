@@ -44,3 +44,8 @@ export const TextFieldInput = styled.input`
     color: ${({ theme }) => theme.colors['accent-200']};
   }
 `;
+
+export const TextFieldError = styled.span`
+  color: ${({ theme }) => theme.colors['red-500']};
+  font-size: .875rem;
+`;
