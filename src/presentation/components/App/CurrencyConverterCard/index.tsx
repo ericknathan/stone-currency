@@ -12,7 +12,7 @@ export function CurrencyConverterCard() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isValid },
     setValue
   } = useForm<ICurrencyConverter>({
     resolver: zodResolver(currencyConverterSchema),
@@ -25,6 +25,8 @@ export function CurrencyConverterCard() {
       state: data
     })
   }
+
+  const isSubmitButtonDisabled = !isValid;
 
   return (
     <CurrencyCardWrapper onSubmit={handleSubmit(submitCurrencyForm)}>
@@ -69,7 +71,7 @@ export function CurrencyConverterCard() {
         onChange={(type) => setValue('paymentType', type as ICurrencyConverter['paymentType'])}
       />
 
-      <Button>
+      <Button disabled={isSubmitButtonDisabled}>
         <img src="/icons/transfer-icon.svg" />
         Converter
       </Button>
