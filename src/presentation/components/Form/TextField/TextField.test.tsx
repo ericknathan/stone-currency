@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { screen } from '@testing-library/react';
+import { fireEvent, screen } from '@testing-library/react';
 import 'jest-styled-components';
 
 import { render } from '@test/utils';
@@ -34,5 +34,16 @@ describe("TextField Component", () => {
     render(<TextField leftContent={leftContent} name="example" />);
 
     expect(screen.getByTestId("left-content")).toBeDefined();
+  });
+
+  it('should write a text in the text field correctly', async () => {
+    render(<TextField label={label} name="example" />);
+
+    const textField = screen.getByLabelText(label) as HTMLInputElement;
+    const value = "Test";
+
+    fireEvent.change(textField, { target: { value } });
+
+    expect(textField.value).toBe(value);
   });
 })
