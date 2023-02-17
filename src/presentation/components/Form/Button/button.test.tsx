@@ -27,4 +27,10 @@ describe("Button Component", () => {
 
         expect(screen.getByRole('button')).toHaveStyleRule('background-color', theme.colors['primary-500']);
     });
+
+    it('should render a button with secondary styles', () => {
+        render(<Button variant="secondary">{childrenText}</Button>);
+
+        expect(screen.getByRole('button')).toHaveStyleRule('background-color', 'transparent');
+    });
 })
