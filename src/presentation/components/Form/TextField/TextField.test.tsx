@@ -27,4 +27,12 @@ describe("TextField Component", () => {
 
     expect(screen.getByText(error)).toBeDefined();
   });
+
+  it("should render a text field with correct left content", async () => {
+    const leftContent = <div data-testid="left-content">Left Content</div>;
+
+    render(<TextField leftContent={leftContent} name="example" />);
+
+    expect(screen.getByTestId("left-content")).toBeDefined();
+  });
 })
