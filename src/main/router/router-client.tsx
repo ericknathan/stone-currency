@@ -3,7 +3,7 @@ import {
 } from 'react-router-dom';
 
 import { GlobalLayout } from '@presentation/layouts';
-import { Home } from '@presentation/pages';
+import { Home, SuccessfulConversion } from '@presentation/pages';
 
 export const routerClient = createBrowserRouter([
   {
@@ -13,6 +13,10 @@ export const routerClient = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+      },
+      {
+        path: '/calculate',
+        element: <SuccessfulConversion />
       }
     ]
   },
