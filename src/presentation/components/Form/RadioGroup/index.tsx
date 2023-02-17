@@ -11,7 +11,7 @@ interface RadioGroupProps extends Omit<RadioProps, 'onChange'> {
     label: string;
     value: string;
   }[];
-  onChange: (value: string) => void;
+  onChange?: (value: string) => void;
 }
 
 export function RadioGroup({ name, label, options, orientation = 'horizontal', onChange, ...props }: RadioGroupProps) {
