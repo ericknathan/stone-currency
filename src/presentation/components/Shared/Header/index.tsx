@@ -15,7 +15,7 @@ export function Header() {
       <ApiInfoWrapper>
         {
           isLoading ? (
-            <TextSkeleton />
+            <TextSkeleton data-testid="skeleton" />
           ) : (
             <p>{formattedDate} | {formattedTime} UTC</p>
           )
