@@ -54,4 +54,16 @@ describe("RadioGroup Component", () => {
 
     expect(screen.getByLabelText(groupLabel)).not.toHaveStyleRule('flex-direction', 'column');
   });
+
+  it('should render radio group with only first option as default checked value', () => {
+    render(
+      <RadioGroup
+        label={groupLabel}
+        options={options}
+      />
+    );
+
+    expect(screen.getByLabelText(options[0].label).getAttribute('data-state')).toEqual('checked');
+    expect(screen.getByLabelText(options[1].label).getAttribute('data-state')).toEqual('unchecked');
+  });
 })
