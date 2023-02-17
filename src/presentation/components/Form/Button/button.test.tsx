@@ -17,9 +17,12 @@ describe("Button Component", () => {
   it('should render button with disabled styles if it is disabled', () => {
     render(<Button disabled>{childrenText}</Button>);
 
-    expect(screen.getByRole('button')).toHaveStyleRule('background-color', theme.colors['accent-200'], {
+    const options = {
       modifier: ':disabled'
-    })
+    }
+
+    expect(screen.getByRole('button')).toHaveStyleRule('background-color', theme.colors['accent-200'], options);
+    expect(screen.getByRole('button')).toHaveStyleRule('cursor', 'not-allowed', options);
   });
 
   it('should render a button with primary styles by default', () => {
