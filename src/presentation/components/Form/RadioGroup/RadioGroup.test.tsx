@@ -26,6 +26,12 @@ describe("RadioGroup Component", () => {
     });
   });
 
+  it('should render radio group label', () => {
+    render(<RadioGroup label={groupLabel} options={options} />);
+
+    expect(screen.getByLabelText(groupLabel)).toBeDefined();
+  });
+
   it('should render radio group with vertical orientation', () => {
     render(
       <RadioGroup
