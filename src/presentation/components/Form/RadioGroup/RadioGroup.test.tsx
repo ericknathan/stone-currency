@@ -6,6 +6,7 @@ import { render } from '@test/utils';
 import { RadioGroup } from '.';
 
 describe("RadioGroup Component", () => {
+  const groupLabel = "Radio Group Label";
   const options = [
     {
       label: "Option 1",
@@ -23,5 +24,17 @@ describe("RadioGroup Component", () => {
     options.forEach(option => {
       expect(screen.getByLabelText(option.label)).toBeDefined();
     });
+  });
+
+  it('should render radio group with vertical orientation', () => {
+    render(
+      <RadioGroup
+        label={groupLabel}
+        options={options}
+        orientation="vertical"
+      />
+    );
+
+    expect(screen.getByLabelText(groupLabel)).toHaveStyleRule('flex-direction', 'column');
   });
 })
