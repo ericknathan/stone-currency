@@ -5,7 +5,7 @@ export const defaultTheme = {
     'accent-700': '#2E3742',
     'accent-500': '#45505E',
     'accent-300': '#6E7E90',
-    'accent-200': '#8C9CAD ',
+    'accent-200': '#8C9CAD',
     'accent-50': '#D7E0EB ',
   
     'primary-500': '#00AB63',
