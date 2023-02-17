@@ -1,11 +1,17 @@
 import { ReactElement } from 'react';
 import { render as testingLibraryRender } from '@testing-library/react';
-import { ThemeProvider } from 'styled-components';
 
 import { defaultTheme } from '@presentation/styles/theme/default';
+import { CacheProvider, StylesProvider } from '@presentation/providers';
 
 export function render(ui: ReactElement) {
-  return testingLibraryRender(<ThemeProvider theme={defaultTheme}>{ui}</ThemeProvider>);
+  return testingLibraryRender(
+    <StylesProvider>
+      <CacheProvider>
+        {ui}
+      </CacheProvider>
+    </StylesProvider>
+  );
 }
 
 export const theme = defaultTheme;
