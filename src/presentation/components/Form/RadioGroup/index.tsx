@@ -25,7 +25,7 @@ export function RadioGroup({ name, label, options, orientation = 'horizontal', o
         onValueChange={onChange}
       >
         {options.map(option => (
-          <RadioGroupInput>
+          <RadioGroupInput key={option.value}>
             <RadioGroupInputItem {...props} value={option.value} id={option.value}>
               <RadioGroupInputIndicator  />
             </RadioGroupInputItem>
