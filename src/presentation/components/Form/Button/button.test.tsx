@@ -21,4 +21,10 @@ describe("Button Component", () => {
             modifier: ':disabled'
         })
     });
+
+    it('should render a button with primary styles by default', () => {
+        render(<Button>{childrenText}</Button>);
+
+        expect(screen.getByRole('button')).toHaveStyleRule('background-color', theme.colors['primary-500']);
+    });
 })
