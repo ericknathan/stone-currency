@@ -46,13 +46,4 @@ export const TextSkeleton = styled.div`
   background-color: ${({ theme }) => theme.colors['accent-50']};
 
   animation: skeleton 1s ease-in-out infinite alternate;
-
-  @keyframes skeleton {
-    from {
-      filter: brightness(1);
-    }
-    to {
-      filter: brightness(1.1);
-    }
-  }
 `;

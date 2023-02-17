@@ -35,4 +35,13 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Sharon Sans';
     src: url('/fonts/SharonSans-Medium.otf') format('opentype');
   }
+
+  @keyframes skeleton {
+    from {
+      filter: brightness(1);
+    }
+    to {
+      filter: brightness(1.1);
+    }
+  }
 `;
