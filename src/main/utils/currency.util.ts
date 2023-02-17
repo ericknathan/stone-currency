@@ -12,8 +12,6 @@ export function calculateMoney(data: CalculateProps) {
   const { currency, statePercentageTax, nowCurrencyValue } = data;
   const purchaseIOF = 1.1;
 
-  console.log({ currency, statePercentageTax, nowCurrencyValue, purchaseIOF })
-
   return (currency * getDecimalPercentage(statePercentageTax)) * (nowCurrencyValue * getDecimalPercentage(purchaseIOF));
 }
 
