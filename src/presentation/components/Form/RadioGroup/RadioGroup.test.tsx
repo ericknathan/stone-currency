@@ -43,4 +43,15 @@ describe("RadioGroup Component", () => {
 
     expect(screen.getByLabelText(groupLabel)).toHaveStyleRule('flex-direction', 'column');
   });
+
+  it('should render radio group with horizontal orientation by default', () => {
+    render(
+      <RadioGroup
+        label={groupLabel}
+        options={options}
+      />
+    );
+
+    expect(screen.getByLabelText(groupLabel)).not.toHaveStyleRule('flex-direction', 'column');
+  });
 })
