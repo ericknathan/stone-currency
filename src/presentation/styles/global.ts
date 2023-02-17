@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body, #root {
     height: 100vh;
+    max-width: 100vw;
   }
 
   body, input, textarea, button {

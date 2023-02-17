@@ -16,6 +16,8 @@ export const HeaderWrapper = styled.header`
     align-items: flex-start;
     flex-direction: column;
     gap: 1rem;
+
+    height: auto;
   }
 `;
 
