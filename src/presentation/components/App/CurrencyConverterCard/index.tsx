@@ -37,7 +37,7 @@ export function CurrencyConverterCard() {
           type="string"
           min={0}
           leftContent={<span>$</span>}
-          error={errors.currency?.message}
+          error={errors.currency?.message ?? undefined}
           register={register('currency', {
             onChange: (event) => {
               const { value } = event.target;
@@ -54,7 +54,7 @@ export function CurrencyConverterCard() {
           max={100}
           step={0.1}
           placeholder="0 %"
-          error={errors.statePercentageTax?.message}
+          error={errors.statePercentageTax?.message ?? undefined}
           register={register('statePercentageTax', {
             valueAsNumber: true,
           })}
