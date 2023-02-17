@@ -16,6 +16,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
 
   box-shadow: 0px 8px 4px rgba(13, 17, 27, 0.08);
 
+  font-family: ${({ theme }) => theme.fontFamilies.sharonSans};
   font-weight: 500;
 
   cursor: pointer;

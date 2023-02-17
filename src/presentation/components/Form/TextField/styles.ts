@@ -20,6 +20,8 @@ export const TextFieldInputWrapper = styled.div`
   color: ${({ theme }) => theme.colors['accent-700']};
   box-shadow: 0px 8px 4px rgba(13, 17, 27, 0.08);
 
+  font-family: ${({ theme }) => theme.fontFamilies.sharonSans};
+
   overflow: hidden;
 
   &:focus-within {
@@ -35,6 +37,7 @@ export const TextFieldInput = styled.input`
   color: inherit;
   background-color: inherit;
 
+  font-family: inherit;
 
   &:focus {
     outline: none;

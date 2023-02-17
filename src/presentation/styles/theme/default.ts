@@ -18,6 +18,7 @@ export const defaultTheme = {
   },
   fontFamilies: {
     default: '"Roboto", sans-serif',
+    sharonSans: '"Sharon Sans", sans-serif',
     circularStd: '"Circular Std", sans-serif'
   }
 }
