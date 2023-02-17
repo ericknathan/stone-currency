@@ -42,7 +42,7 @@ export function CurrencyConverterSuccessCard() {
               <h2>O resultado do cálculo é</h2>
               <h3>{formatMoney(
                 calculateFunction({
-                  currency,
+                  currency: Number(currency.replace('.', '').replace(',', '.')),
                   statePercentageTax,
                   nowCurrencyValue
                 })

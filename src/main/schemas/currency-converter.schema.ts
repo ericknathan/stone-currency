@@ -2,11 +2,11 @@ import { z } from "Zod";
 
 export const currencyConverterSchema = z.object({
     currency: z
-        .number({
+        .string({
             required_error: 'A moeda é obrigatória!',
             invalid_type_error: 'A moeda deve ser um número!'
         })
-        .min(0, 'A moeda deve ser um número maior que zero!'),
+        .min(1, 'A moeda deve ser um número maior que zero!'),
     statePercentageTax: z
         .number({
             invalid_type_error: 'A taxa do estado deve ser um número!',

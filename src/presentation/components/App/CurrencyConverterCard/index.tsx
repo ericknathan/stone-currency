@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { RadioGroup, TextField, Button } from '@presentation/components';
 import { CurrencyCardInputValues, CurrencyCardWrapper } from './styles';
 import { currencyConverterSchema, ICurrencyConverter } from '@main/schemas';
+import { normalizeCurrency } from '@main/utils';
 
 export function CurrencyConverterCard() {
   const {
@@ -31,12 +32,17 @@ export function CurrencyConverterCard() {
         <TextField
           label="Dólar"
           placeholder="1,00"
-          type="number"
+          type="string"
           min={0}
           leftContent={<span>$</span>}
           error={errors.currency?.message}
           register={register('currency', {
-            valueAsNumber: true,
+            onChange: (event) => {
+              const { value } = event.target;
+
+              if(value === '0,0') setValue('currency', '');
+              else setValue('currency', normalizeCurrency(value));
+            }
           })}
         />
         <TextField
