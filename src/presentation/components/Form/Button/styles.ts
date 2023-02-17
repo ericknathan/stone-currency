@@ -22,11 +22,11 @@ export const StyledButton = styled.button<StyledButtonProps>`
   cursor: pointer;
   transition: all 0.1s ease-in-out;
   
-  &:active {
+  &:not(:disabled):active {
     transform: scale(0.98);
   }
 
-  &:hover {
+  &:not(:disabled):hover {
     filter: brightness(1.05);
   }
 
@@ -38,6 +38,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
 
       &:disabled {
         background-color: ${({ theme }) => theme.colors['accent-200']};
+        cursor: not-allowed;
       }
     ` :
     css`
