@@ -31,7 +31,9 @@ Upon opening the application, the user is presented with two input fields, where
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for simulating events and interactions with the interface.
 
 ## Demo
-The application is available for public access at:[the-stone-currency.vercel.app](https://the-stone-currency.vercel.app/)
+The application is available for public access at: [the-stone-currency.vercel.app](https://the-stone-currency.vercel.app/)
+
+![](./.github/project-screenshot.png)
 
 ## Running locally
 

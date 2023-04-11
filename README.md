@@ -35,6 +35,8 @@ Ao abrir a aplicação, o usuário é apresentado com dois campos de entrada, on
 ## Demonstração
 A aplicação está disponível para acesso público em: [the-stone-currency.vercel.app](https://the-stone-currency.vercel.app/)
 
+![](./.github/project-screenshot.png)
+
 ## Execução local
 
 ### Como executar a aplicação
