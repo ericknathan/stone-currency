@@ -3,6 +3,8 @@
 </div>
 
 # Stone Currency
+[🇺🇸 Do not speak Portuguese? Click here to view the english version.](./README-EN.md)
+
 Stone Currency é uma aplicação web desenvolvida para facilitar a conversão de valores monetários de dólar para real. Com uma interface amigável e intuitiva, a aplicação permite que os usuários obtenham rapidamente o valor atualizado de sua moeda estrangeira em reais brasileiros.
 
 Ao abrir a aplicação, o usuário é apresentado com dois campos de entrada, onde pode digitar o valor que deseja converter e a taxa do estado. A aplicação é atualizada em tempo real, com taxas de câmbio atualizadas de fontes confiáveis, garantindo que o valor exibido seja preciso e atualizado a cada 30 segundos.
